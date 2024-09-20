@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsLearningApp.KLP"
+             Title="KLP">
+    <ContentPage.Background>
+        <!-- Gradient Background -->
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFDEE9" Offset="0.0" />
+            <GradientStop Color="#B5FFFC" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout Spacing="30" Padding="20" HorizontalOptions="Center">
+        <!-- Red and Yellow Buttons -->
+        <Label Text="Let's Learn Colors" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center"/>
+        <HorizontalStackLayout Spacing="25">
+            <Button Text="Red" 
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Red" 
+                    TextColor="White"
+                    CornerRadius="30" WidthRequest="300"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Clicked="KLP_Button_Clicked"/>
+
+            <Button Text="Yellow" WidthRequest="300"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Yellow" 
+                    TextColor="Black"
+                    CornerRadius="30"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Clicked="KLP_Button_Clicked"/>
+        </HorizontalStackLayout>
+
+        <!-- Blue and Orange Buttons -->
+        <HorizontalStackLayout Spacing="25">
+            <Button Text="Blue" WidthRequest="300"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Blue" 
+                    TextColor="White"
+                    CornerRadius="30"
+                    FontAttributes="Bold" Clicked="KLP_Button_Clicked"
+                    FontSize="Large"/>
+
+            <Button Text="Orange" WidthRequest="300" Clicked="KLP_Button_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Orange" 
+                    TextColor="White"
+                    CornerRadius="30"
+                    FontAttributes="Bold"
+                    FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <!-- Green and Purple Buttons -->
+        <HorizontalStackLayout Spacing="25">
+            <Button Text="Green" Clicked="KLP_Button_Clicked"
+                    HorizontalOptions="FillAndExpand" WidthRequest="300"
+                    BackgroundColor="Green" 
+                    TextColor="White"
+                    CornerRadius="30"
+                    FontAttributes="Bold"
+                    FontSize="Large"/>
+
+            <Button Text="Purple" Clicked="KLP_Button_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Purple" 
+                    TextColor="White"
+                    CornerRadius="30"
+                    FontAttributes="Bold" WidthRequest="300"
+                    FontSize="Large"/>
+        </HorizontalStackLayout>
+
+       
+        <HorizontalStackLayout Spacing="25">
+            <Button Text="White" WidthRequest="300" Clicked="KLP_Button_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    CornerRadius="30"
+                    FontAttributes="Bold"
+                    FontSize="Large"/>
+
+            <Button Text="Black" WidthRequest="300" Clicked="KLP_Button_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Black" 
+                    TextColor="White"
+                    CornerRadius="30"
+                    FontAttributes="Bold"
+                    FontSize="Large"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
